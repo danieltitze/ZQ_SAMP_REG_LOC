@@ -1,0 +1,22 @@
+<mvc:View controllerName="ZQ_SAMPLE_REG_LOC.controller.document" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.ui.layout.form" xmlns="sap.m">
+	<App>
+		<pages>
+			<Page title="Dokument" showNavButton="true" navButtonPress="onNavBack">
+				<content>
+					<f:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout"
+						id="form" labelSpanS="4" labelSpanL="4" labelSpanM="4" labelSpanXL="4">
+						<f:content>
+							<Label text="{i18n>aufnr}"/><Text id="txt_aufnr"/>
+							<Label text="{i18n>matnr}"/><Text id="txt_matnr"/>
+							<Label text="{i18n>material}"/><Text id="txt_mat_txt"/>
+							<Label text="{i18n>date}"/><Text id="txt_date"/>
+							<Label text="{i18n>time}"/><Text id="txt_time"/>
+							<Label text="{i18n>scan}"/><Input id="inp_scan" submit="onScanSubmit"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

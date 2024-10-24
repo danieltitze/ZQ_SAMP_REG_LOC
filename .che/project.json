@@ -1,0 +1,15 @@
+{
+    "type": "sap.web",
+    "builders": {
+        "configs": {}
+    },
+    "runners": {
+        "configs": {}
+    },
+    "attributes": {
+        "sap.watt.common.setting": [
+            "{\"projectType\":[\"sap.watt.uitools.ide.web\",\"sap.watt.uitools.ide.fiori\"],\"mockpreview\":{\"mockUri\":\"\",\"metadataFilePath\":\"\",\"loadJSONFiles\":false,\"loadCustomRequests\":false,\"mockRequestsFilePath\":\"\"},\"deploy\":{\"destination\":\"E10_CLONING_JW\",\"name\":\"ZQ_SAMP_REG_LOC\"}}"
+        ]
+    },
+    "mixinTypes": []
+}

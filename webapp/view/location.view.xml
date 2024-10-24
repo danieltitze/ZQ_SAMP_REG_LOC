@@ -1,0 +1,11 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ZQ_SAMPLE_REG_LOC.controller.location">
+	<App>
+		<pages>
+			<Page title="{i18n>title_loc}" id="page">
+				<content>
+				    <Input width="100%" id="inp_scan" fieldWidth="10%" maxLength="100" submit="onScanSubmit"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
