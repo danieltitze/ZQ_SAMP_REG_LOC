@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: zq_sample_reg_loc
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: ERP_E10
+          url: http://e10.schuelkemayr.int:3360
+          client: '050'
+        app:
+          name: ZQ_SAMP_REG_LOC
+          description: Update via BAS
+          package: ZQM_SAMPLE
+          transport: E10K988434
+        exclude:
+          - /test/
